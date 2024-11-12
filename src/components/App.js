@@ -27,7 +27,7 @@ const App = () => {
   
   return (
     <div id="main">
-      <ol id='#relativeList'>
+      <ol id='relativeList'>
               {
                  data.map(item =>(
                     <li key={item.key}>{item.name}</li>
