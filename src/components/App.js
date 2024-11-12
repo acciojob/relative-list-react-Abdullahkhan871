@@ -4,23 +4,23 @@ const App = () => {
     let data= [
       {
         "name": "Grandparents",
-        "key": "#relativeListItem1"
+        "key": "relativeListItem1"
       },
       {
         "name": "Uncle Ramesh",
-        "key": "#relativeListItem2"
+        "key": "relativeListItem2"
       },
       {
         "name": "Aunt Meera",
-        "key": "#relativeListItem3"
+        "key": "relativeListItem3"
       },
       {
         "name": "Cousin Priya",
-        "key": "#relativeListItem4"
+        "key": "relativeListItem4"
       },
       {
         "name": "Cousin Aman",
-        "key": "#relativeListItem4"
+        "key": "relativeListItem4"
       }
     ]
     
@@ -30,7 +30,7 @@ const App = () => {
       <ol id='relativeList'>
               {
                  data.map(item =>(
-                    <li key={item.key}>{item.name}</li>
+                    <li id={item.key}>{item.name}</li>
                  ))
                }
       </ol>
